@@ -438,12 +438,14 @@ body {
 
 .project_card {
     display: flex;
-    flex-direction: column;
-    width: 18rem;
-    background-color: var(--card-background);
     border-radius: 1.2rem;
     transition: transform .5s ease;
-    box-shadow: 2px 2px 100px hsl(0 0% 0% / 20);
+}
+
+@media screen and (max-width:700px) {
+    .project_card{
+        flex-direction: column;
+    }
 }
 
 .project_card:hover {
@@ -451,6 +453,8 @@ body {
 }
 
 .project_image img {
+    aspect-ratio:2/1;
+    object-fit:contain;
     width: 100%;
     border-radius: 1.2rem 1.2rem 0 0;
 }

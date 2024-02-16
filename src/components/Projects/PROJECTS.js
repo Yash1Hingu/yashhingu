@@ -2,6 +2,7 @@ import blogProjectIcon from '../../assets/images/project-blog.png'
 import tictactoeIcon from '../../assets/images/project-tictactoe.png'
 import investCalIcon from '../../assets/images/project-investment.png'
 import landingPage from '../../assets/images/project-landingpage.jpg'
+import airbnbProject from '../../assets/images/project-airbnb.png';
 const projects = [
     {
         projectIcon: blogProjectIcon,
@@ -12,12 +13,12 @@ const projects = [
         githublink: "https://github.com/Yash1Hingu/yashblog"
     },
     {
-        projectIcon: tictactoeIcon,
-        title: "Tic Tac Toe",
-        description: " Experience the classic thrill of Tic-Tac-Toe on my latest project! Dive into this nostalgic game where strategy meets fun. Challenge friends or test your skills against the computer. Simple,yet addictive—Tic-Tac-Toe awaits! Ready to make your move? Play now",
-        techstack: "React JS",
-        livelink: "https://tictactoe-eight-sooty.vercel.app/",
-        githublink: "https://github.com/Yash1Hingu/tictactoe"
+        projectIcon: airbnbProject,
+        title: "Airbnb Clone",
+        description: "Introducing HomelyHub, a cutting-edge platform that redefines the way you travel and host. This Airbnb clone offers a seamless and user-friendly experience for both guests and hosts, providing a one-stop solution for accommodation needs.",
+        techstack: "Node ,MongoDB ,Express ,React",
+        livelink: "https://airbnb-zeta-ten.vercel.app/",
+        githublink: "https://github.com/Yash1Hingu/airbnb"
     },
     {
         projectIcon: investCalIcon,

@@ -28,7 +28,7 @@ export default function AboutPage() {
                 </div>
                 <div className="education_info" data-aos="slide-right" data-aos-duration="2000">
                     <div className="edu_one">
-                        <h3>ClassNameclassName XII</h3>
+                        <h3>Class XII</h3>
                         <p>Percentage: 80%</p>
                     </div>
                     <div className="edu_two">
@@ -44,7 +44,7 @@ export default function AboutPage() {
                 </div>
                 <div className="education_info" data-aos="slide-right" data-aos-duration="3000">
                     <div className="edu_one">
-                        <h3>ClassNameclassName X</h3>
+                        <h3>Class X</h3>
                         <p>Percentage: 80%</p>
                     </div>
                     <div className="edu_two">
