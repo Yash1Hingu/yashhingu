@@ -9,7 +9,7 @@ const projects = [
         title: "Yash Blogs",
         description: " I've created a user-friendly blog website using the MERN stack (MongoDB, Express.js, React,Node.js). Users can easily register, log in, and share their blogs. Dive into a world of stories and explore diverse perspectives.",
         techstack: "Node ,MongoDB ,Express ,React",
-        livelink: "https://yashblogs.onrender.com/",
+        livelink: "https://yashblog.vercel.app/",
         githublink: "https://github.com/Yash1Hingu/yashblog"
     },
     {
