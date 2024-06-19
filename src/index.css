@@ -36,7 +36,7 @@
 }
 
 body {
-    background-color: transparent;
+    background-color: var(--dark-mode);
     max-width: 1400px;
     margin: 0 auto;
     scroll-behavior: smooth;
