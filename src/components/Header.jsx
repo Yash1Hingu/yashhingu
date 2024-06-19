@@ -30,6 +30,7 @@ export default function Header() {
                     <Link to="/about">About</Link>
                     <Link to="/techstack">Tech Stack</Link>
                     <Link to="/projects">Project</Link>
+                    <Link to="/achievements">Achievements</Link>
                     <Link to="/contact">Contact</Link>
                 </div>
                 <div className="topnav_socialmedia">
