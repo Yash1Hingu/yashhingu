@@ -1,3 +1,8 @@
+import nextJS from '../../assets/images/nextjs.svg';
+import tailwindcss from '../../assets/images/tailwindcss.svg';
+import postman from '../../assets/images/postman.svg';
+import redux from '../../assets/images/redux.svg';
+import postgressql from '../../assets/images/postgresql.svg';
 import htmlIcon from '../../assets/images/icon-html.svg'
 import cssIcon from '../../assets/images/icon-css.svg'
 import jsIcon from '../../assets/images/icon-js.svg'
@@ -16,19 +21,9 @@ import vscodeIcon from "../../assets/images/icon-vscode.svg"
 import viteIcon from "../../assets/images/icon-vite.svg"
 const techs = [
     {
-        name: 'HTML',
-        alt: 'html-icon',
-        imageIcon: htmlIcon
-    },
-    {
-        name: 'CSS',
-        alt: 'css-icon',
-        imageIcon: cssIcon
-    },
-    {
-        name: 'Javascript',
-        alt: 'js-icon',
-        imageIcon: jsIcon
+        name: 'NextJS',
+        alt: 'nextjs-icon',
+        imageIcon: nextJS
     },
     {
         name: 'ReactJS',
@@ -36,9 +31,9 @@ const techs = [
         imageIcon: reactIcon
     },
     {
-        name: 'Bootstrap',
-        alt: 'bootstrap-icon',
-        imageIcon: bootstrapIcon
+        name: 'Redux',
+        alt: 'redux-icon',
+        imageIcon: redux
     },
     {
         name: 'NodeJS',
@@ -56,19 +51,39 @@ const techs = [
         imageIcon: mongodbIcon
     },
     {
+        name: 'HTML',
+        alt: 'html-icon',
+        imageIcon: htmlIcon
+    },
+    {
+        name: 'CSS',
+        alt: 'css-icon',
+        imageIcon: cssIcon
+    },
+    {
+        name: 'TailwindCSS',
+        alt: 'tailwindcss-icon',
+        imageIcon: tailwindcss
+    },
+    {
+        name: 'Javascript',
+        alt: 'js-icon',
+        imageIcon: jsIcon
+    },
+    {
+        name: 'Bootstrap',
+        alt: 'bootstrap-icon',
+        imageIcon: bootstrapIcon
+    },
+    {
         name: 'MySQL',
         alt: 'mysql-icon',
         imageIcon: mysqlIcon
     },
     {
-        name: 'Spring',
-        alt: 'spring-icon',
-        imageIcon: springIcon
-    },
-    {
-        name: 'Hibernate',
-        alt: 'hibernate-icon',
-        imageIcon: hibernateIcon
+        name: 'PostgreSQL',
+        alt: 'postgresql-icon',
+        imageIcon: postgressql
     },
     {
         name: 'Java',
@@ -84,6 +99,11 @@ const techs = [
         name: 'Github',
         alt: 'github-icon',
         imageIcon: githubIcon
+    },
+    {
+        name: 'Postman',
+        alt: 'postman-icon',
+        imageIcon: postman
     },
     {
         name: 'VS Code',

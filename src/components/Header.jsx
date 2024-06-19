@@ -3,7 +3,7 @@ import githubImg from '../assets/images/icon-github.svg'
 import linkedinImg from '../assets/images/icon-linkdein.svg'
 import hungburgerImg from "../assets/images/icon-menu.svg"
 import crossIcon from "../assets/images/icon-x.svg"
-import { Link } from 'react-router-dom'
+import { NavLink, useParams } from 'react-router-dom'
 import { closeNav, openNav } from '../util/navbar'
 import { useState } from 'react'
 
@@ -26,12 +26,12 @@ export default function Header() {
                     <img src={crossIcon} alt="" />
                 </div>
                 <div className="topnav_links" onClick={isClick && handleCloseNav}>
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/techstack">Tech Stack</Link>
-                    <Link to="/projects">Project</Link>
-                    <Link to="/achievements">Achievements</Link>
-                    <Link to="/contact">Contact</Link>
+                    <NavLink to="/" activeClassName="active">Home</NavLink>
+                    <NavLink to="/about" activeClassName="active">About</NavLink>
+                    <NavLink to="/techstack" activeClassName="active">Tech Stack</NavLink>
+                    <NavLink to="/projects" activeClassName="active">Project</NavLink>
+                    <NavLink to="/achievements" activeClassName="active">Achievements</NavLink>
+                    <NavLink to="/contact" activeClassName="active">Contact</NavLink>
                 </div>
                 <div className="topnav_socialmedia">
                     <a href="https://github.com/Yash1Hingu" target="_blank">
