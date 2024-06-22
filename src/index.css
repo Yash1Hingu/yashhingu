@@ -666,6 +666,13 @@ body {
 @media screen and (max-width:550px) {
     .contact_container {
         font-size: 24px;
+        padding: 24px;
+    }
+    .contact_container h2{
+        font-size: 2.4rem !important;
+    }
+    .contact_container form{
+        margin: 0 !important;
     }
 }
 
