@@ -10,17 +10,17 @@ export default function AchievementsPage() {
                 className="project_heading"
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                style={{marginBottom:"12rem"}}
+                style={{ marginBottom: "12rem" }}
             >
                 <h1>Courcework</h1>
                 <div
                     className="projects_flex_container"
                 >
-                    <h3>The Complete 2024 Web Development Bootcam
+                    <h3>The Complete 2024 Web Development Bootcamp
                         <a
                             href="https://www.udemy.com/certificate/UC-5e708e15-cb2c-4bfc-a1a7-481d05d6e9c9"
                             target="_blank"
-                        >(Certificate)</a> - Udemy</h3>
+                        >   (Certificate)</a> - Udemy</h3>
                     <h3>React - The Complete Guide 2024 (incl. Next.js,
                         Redux) - Udemy
                     </h3>
@@ -48,7 +48,7 @@ export default function AchievementsPage() {
                     <div className='achievements'>
                         <h2>LeetCode </h2>
                         <a href="https://leetcode.com/u/yash1hingu/">
-                            <img src={leetcodeimg} alt="frontenddevhackerank-badge"/>
+                            <img src={leetcodeimg} alt="frontenddevhackerank-badge" />
                         </a>
                     </div>
                 </div>

@@ -264,6 +264,10 @@ body {
     .hero_image img {
         width: 100%;
     }
+
+    .about_container{
+        padding: 32px 24px !important;
+    }
 }
 
 .about_container {
@@ -607,6 +611,9 @@ body {
 }
 
 @media screen and (max-width:550px) {
+    .project_heading h3 {
+        font-size: 1.2rem;
+    }
     .projects_container{
         padding: 1.8rem;
     }
@@ -646,6 +653,10 @@ body {
     }
     .card_body::before{
         content: none;
+    }
+
+    .projects_flex_container .achievements img{
+        width: 100%;
     }
 }
 
