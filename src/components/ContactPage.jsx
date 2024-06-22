@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Button, TextField, Typography } from '@mui/material';
+import { Box, Button, CircularProgress, TextField, Typography } from '@mui/material';
 import emailjs from 'emailjs-com';
 
 const InputLabelProps = {
@@ -15,6 +15,7 @@ export default function ContactPage() {
         message: ''
     });
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         const submissionStatus = localStorage.getItem('isSubmitted');
@@ -33,6 +34,7 @@ export default function ContactPage() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setIsLoading(true);
 
         emailjs.send(
             'service_egwwx7m',
@@ -45,8 +47,10 @@ export default function ContactPage() {
             setFormData({ name: '', email: '', message: '' });
             localStorage.setItem('isSubmitted', true);
             setIsSubmitted(true);
+            setIsLoading(false);
         }).catch(error => {
             console.error('Failed to send email:', error);
+            setIsLoading(false);
         });
     };
 
@@ -133,8 +137,9 @@ export default function ContactPage() {
                             color: 'white',
                             fontWeight: '600'
                         }}
+                        disabled={isLoading}
                     >
-                        Submit
+                        {isLoading ? <CircularProgress size={24} color="inherit" /> : 'Submit'}
                     </Button>
                 </Box>
             )}
