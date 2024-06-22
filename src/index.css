@@ -553,7 +553,7 @@ body {
 }
 
 .projects_flex_container .achievements img{
-    width: 200px;
+    width: 400px;
 }
 
 .project_card {
@@ -656,7 +656,7 @@ body {
 
 .contact_container {
     animation: fade 1s ease-in-out;
-    margin-top: 2rem;
+    margin-top: 100px;
     padding: var(--container-padding);
     font-family: var(--body-font-family);
     color: var(--solid-heading-dark-content);
@@ -672,17 +672,6 @@ body {
     .contact_container {
         font-size: 24px;
     }
-}
-
-.contact_container a {
-    text-decoration: none;
-    background-color: var(--dark-mode);
-    background-image: var(--gradient-heading);
-    animation: texthover .5s ease;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
 }
 
 .footer_conatiner {

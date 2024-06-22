@@ -1,14 +1,26 @@
 import leetcode from '../assets/images/leetcode.gif';
 import frontenddevhackerank from '../assets/images/frontend_developer_react certificate.png';
-""
+import reacthackerank from '../assets/images/hackerrankreact.png';
+import leetcodeimg from '../assets/images/leetcode.png';
 
 export default function AchievementsPage() {
     return (<>
         <div className="projects_container" id="project">
-            <div className="project_heading" data-aos="fade-up" data-aos-duration="1000">
+            <div
+                className="project_heading"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                style={{marginBottom:"12rem"}}
+            >
                 <h1>Courcework</h1>
-                <div className="projects_flex_container">
-                    <h3>The Complete 2024 Web Development Bootcam  <a href="https://www.udemy.com/certificate/UC-5e708e15-cb2c-4bfc-a1a7-481d05d6e9c9/" target="_blank">(Certificate)</a> - Udemy</h3>
+                <div
+                    className="projects_flex_container"
+                >
+                    <h3>The Complete 2024 Web Development Bootcam
+                        <a
+                            href="https://www.udemy.com/certificate/UC-5e708e15-cb2c-4bfc-a1a7-481d05d6e9c9"
+                            target="_blank"
+                        >(Certificate)</a> - Udemy</h3>
                     <h3>React - The Complete Guide 2024 (incl. Next.js,
                         Redux) - Udemy
                     </h3>
@@ -25,6 +37,18 @@ export default function AchievementsPage() {
                         <h2>HackerRank </h2>
                         <a href="https://www.hackerrank.com/certificates/061d4dc918c5">
                             <img src={frontenddevhackerank} alt="frontenddevhackerank-badge" />
+                        </a>
+                    </div>
+                    <div className='achievements'>
+                        <h2>HackerRank </h2>
+                        <a href="https://www.hackerrank.com/certificates/ffbce235fdcd">
+                            <img src={reacthackerank} alt="frontenddevhackerank-badge" />
+                        </a>
+                    </div>
+                    <div className='achievements'>
+                        <h2>LeetCode </h2>
+                        <a href="https://leetcode.com/u/yash1hingu/">
+                            <img src={leetcodeimg} alt="frontenddevhackerank-badge"/>
                         </a>
                     </div>
                 </div>
