@@ -176,6 +176,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        z-index: 10;
     }
 
     .topnav_links {
@@ -349,6 +350,18 @@ body {
     font-size: 1rem;
 }
 
+@media screen and (max-width:550px) {
+    .about_me p{
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .edu_one{
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start !important;
+    }
+}
+
 .my_tech_stack_section {
     animation: fade 1s ease-in-out;
     padding: var(--container-padding);
@@ -441,7 +454,7 @@ body {
 
 /* Project */
 
-.card{
+.card {
     position: relative;
     width: 1000px;
     height: 400px;
@@ -449,38 +462,38 @@ body {
     overflow: hidden;
 }
 
-.card_image{
+.card_image {
     height: 100%;
     width: 100%;
     object-fit: cover;
     scale: 1.15;
-    transition: opacity 0.25s,scale 0.35s;
+    transition: opacity 0.25s, scale 0.35s;
 }
 
-.card:hover .card_image{
+.card:hover .card_image {
     opacity: 0.1;
     scale: 1;
 }
 
-.card_title{
+.card_title {
     letter-spacing: 1px;
     text-transform: uppercase;
-    text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
-.card_description{
+.card_description {
     font-size: 1.2rem;
     opacity: 0;
     transition: -25px;
-    transition: opacity 0.25s,translate 0.25s;
+    transition: opacity 0.25s, translate 0.25s;
 }
 
-.card:hover .card_description{
+.card:hover .card_description {
     opacity: 1;
     translate: 0;
 }
 
-.card_body{
+.card_body {
     position: absolute;
     inset: 0;
     padding: 50px;
@@ -493,7 +506,7 @@ body {
     justify-content: center;
 }
 
-.card_body::before{
+.card_body::before {
     content: '';
     position: absolute;
     inset: 20px;
@@ -503,7 +516,7 @@ body {
     transition: opacity 0.25s, scale 0.25s;
 }
 
-.card:hover .card_body::before{
+.card:hover .card_body::before {
     opacity: 1;
     scale: 1;
 }
@@ -527,9 +540,10 @@ body {
     margin-bottom: 2rem;
 }
 
-.project_heading h1{
+.project_heading h1 {
     font-size: 2.4rem;
 }
+
 .project_heading h3 {
     font-size: 1.4rem;
     font-weight: 400;
@@ -544,7 +558,7 @@ body {
     color: var(--light-content);
 }
 
-.projects_flex_container .achievements{
+.projects_flex_container .achievements {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -552,39 +566,8 @@ body {
     color: var(--light-content);
 }
 
-.projects_flex_container .achievements img{
+.projects_flex_container .achievements img {
     width: 400px;
-}
-
-.project_card {
-    display: flex;
-    border-radius: 1.2rem;
-    transition: transform .5s ease;
-}
-
-@media screen and (max-width:700px) {
-    .project_card {
-        flex-direction: column;
-    }
-}
-
-.project_card:hover {
-    transform: scale(1.05);
-}
-
-.project_image img {
-    aspect-ratio: 2/1;
-    object-fit: contain;
-    width: 100%;
-    border-radius: 1.2rem 1.2rem 0 0;
-}
-
-.project_about {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 1.5rem;
-    color: var(--solid-heading-dark-content);
 }
 
 .project_techstack {
@@ -594,23 +577,6 @@ body {
     align-items: center;
     gap: 8px;
 }
-
-.project_techstack b {
-    font-size: 1.2rem;
-}
-
-.project_about h4 {
-    font-size: 18px;
-
-}
-
-.project_about p {
-    font-weight: lighter;
-    font-size: 12px;
-    text-align: left;
-    line-height: 1.5;
-}
-
 .project_links {
     display: flex;
     justify-content: center;
@@ -640,17 +606,46 @@ body {
     font-size: 12px;
 }
 
-.project_links a:hover {
-    color: var(--button-text);
-}
-
 @media screen and (max-width:550px) {
-    .projects_container {
-        padding: 9px;
+    .projects_container{
+        padding: 1.8rem;
     }
-
-    .project_card {
-        width: 20rem;
+    .card{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width:100%;
+        border-radius: 12px;
+    }
+    .card_image{
+        scale: 1;
+    }
+    .card:hover .card_image {
+        opacity: 1;
+        scale: 1;
+    }
+    .card_body{
+        position: relative;
+        inset: 0;
+        padding: 16px;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 200;
+        color: var(--light-content);
+    }
+    .card_title{
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+    .card_description{
+        opacity: 1;
+        font-size: 16px;
+    }
+    .project_techstack{
+        display: block;
+    }
+    .card_body::before{
+        content: none;
     }
 }
 
