@@ -1,12 +1,15 @@
 import { Outlet } from "react-router";
 import Header from "./Header";
-import Footer from "./Footer";
+import { ThemeProvider } from "../store/ThemeContext.jsx";
 
 export default function Layout() {
+
     return (<>
-        <Header />
-        <div id="outlet">
-            <Outlet />
-        </div>
+        <ThemeProvider>
+            <Header />
+            <div id="outlet">
+                <Outlet />
+            </div>
+        </ThemeProvider>
     </>)
 }   

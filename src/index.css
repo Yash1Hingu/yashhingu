@@ -127,7 +127,8 @@ body {
 
 .topnav_socialmedia img {
     width: 2rem;
-    height: 2rem;
+    height: 100%;
+    margin-top: 8px;
     transition: transform .5s ease;
 }
 
@@ -430,7 +431,6 @@ body {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
     /* If you want dots under the hoverable text */
 }
 
@@ -725,5 +725,106 @@ body {
 @media screen and (max-width:550px) {
     .github p img {
         max-width: 300px;
+    }
+}
+
+:root {
+    --light-mode: #e6e6e6;
+    --solid-heading: #42446E;
+    --gradient-heading: linear-gradient(90deg, #05B3FF 0%, #F40058 70%);
+    --light-mode-dark-content: #323232;
+    --light-mode-solid-heading-dark-content: #323232;
+    --solid-heading-light-content: #42446E;
+    --light-content: #A7A7A7;
+    --button-text: #018C0F;
+    --button-success: #D7FFE0;
+    --card-background: #363636;
+    --card-background-light: #F5F5F5;
+    --nav-font-family: 'Poppins';
+    --body-font-family: 'DM Sans';
+    --letter-spacing: 2px;
+    --word-spacing: 2px;
+    --container-padding: 50px;
+}
+
+/* Light mode specific styles */
+#themebtn{
+    background-color: transparent;
+    border: 2px solid var(--light-mode);
+    border-radius: 50%;
+    padding: 6px 6px 3px 5px;
+    margin: 0 8px;
+}
+
+body.light-mode {
+    background-color: var(--light-mode);
+}
+
+body.light-mode #themebtn{
+    border: 2px solid var(--dark-mode);
+}
+
+body.light-mode .herosection,
+body.light-mode .card,
+body.light-mode .about_container,
+body.light-mode .projects_container,
+body.light-mode .contact_container,
+body.light-mode .contact_container form label,
+body.light-mode .contact_container form input,
+body.light-mode .footer_conatiner {
+    background-color: var(--light-mode);
+    color: var(--light-mode-solid-heading-dark-content) !important;
+}
+
+body.light-mode .topnav_links a,
+body.light-mode .mts_heading h3,
+body.light-mode .mts_heading h1 {
+    color: var(--light-mode-solid-heading-light-content);
+}
+
+body.light-mode .about_me p,
+body.light-mode .about_me h1,
+body.light-mode .education_container h1,
+body.light-mode .projects_flex_container,
+body.light-mode .projects_flex_container .achievements,
+body.light-mode .edu_two h6,
+body.light-mode .card_description {
+    color: var(--light-mode-dark-content);
+}
+
+body.light-mode .card_title{
+    background-color: var(--light-mode-solid-heading-dark-content);
+    padding: 4px 12px;
+    border-radius: 12px;
+    color: var(--light-content);
+}
+
+body.light-mode .project_links {
+    background-color: var(--button-success);
+    color: var(--button-text);
+}
+
+body.light-mode .education_info .edu_one, 
+body.light-mode .edu_two{
+    color: var(--light-mode-solid-heading-dark-content);
+}
+
+body.light-mode .edu_two{
+    opacity: 0.8;
+}
+
+body.light-mode .edu_one p{
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 550px){
+    body.light-mode .card_title{
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0;
+        color: var(--dark-content);
+    }
+    body.light-mode .navbar_flex{
+        background-color: var(--light-mode);
     }
 }

@@ -8,6 +8,7 @@ export default function IndexPage() {
                 <h1 data-aos="fade-in">My name is</h1>
                 <h1 className="hero_heading_name" data-aos="slide-right" data-aos-duration="2000">Yash Hingu</h1>
                 <h1 data-aos="fade-in">I build things for web</h1>
+                <a href=""></a>
             </div>
             <div className="hero_image" data-aos="fade-in" data-aos-duration="2000">
                 <img src={profileImg} alt="" />
