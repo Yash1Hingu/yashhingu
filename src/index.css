@@ -457,7 +457,7 @@ body {
 }
 
 /* Project */
-
+/* 
 .card {
     position: relative;
     width: 1000px;
@@ -523,7 +523,7 @@ body {
 .card:hover .card_body::before {
     opacity: 1;
     scale: 1;
-}
+} */
 
 .projects_container {
     animation: fade 1s ease-in-out;
