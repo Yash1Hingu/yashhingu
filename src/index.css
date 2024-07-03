@@ -617,7 +617,7 @@ body {
     .projects_container{
         padding: 1.8rem;
     }
-    .card{
+    /* .card{
         display: flex;
         flex-direction: column;
         height: auto;
@@ -653,7 +653,7 @@ body {
     }
     .card_body::before{
         content: none;
-    }
+    } */
 
     .projects_flex_container .achievements img{
         width: 100%;

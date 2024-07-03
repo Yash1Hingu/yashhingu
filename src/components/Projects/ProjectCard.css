@@ -3,6 +3,7 @@
 }
 
 .card-content {
+    height: 550px;
     position: relative;
     padding: 15rem 5rem;
     transform-style: preserve-3d;
@@ -27,6 +28,7 @@
     backface-visibility: hidden;
     transform-style: preserve-3d;
 }
+
 
 .card-front,
 .card-back {
@@ -133,6 +135,10 @@
 
 
 @media screen and (max-width: 550px){
+    .back-title{
+        font-size: 1.8rem;
+    }
+
     .title{
         font-size: 1.8rem;
     }
