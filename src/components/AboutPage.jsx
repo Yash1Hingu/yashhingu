@@ -15,7 +15,7 @@ export default function AboutPage() {
                 <div className="education_info" data-aos="slide-right" data-aos-duration="1000">
                     <div className="edu_one">
                         <h3>Bachelor of Technology (Computer Scienece and Engineering) </h3>
-                        <p>CGPA: 8.7</p>
+                        <p>CGPA: 8.6</p>
                     </div>
                     <div className="edu_two">
                         <h6>
