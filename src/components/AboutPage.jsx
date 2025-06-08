@@ -31,7 +31,7 @@ export default function AboutPage() {
                 <div className="education_info" data-aos="slide-right" data-aos-duration="2000">
                     <div className="edu_one">
                         <h3>SENIOR SCHOOL (12th)</h3>
-                        <p>Percentage: 73.20% (GSEB)</p>
+                        {/* <p>Percentage: 73.20% (GSEB)</p> */}
                     </div>
                     <div className="edu_two">
                         <h6>
@@ -47,7 +47,7 @@ export default function AboutPage() {
                 <div className="education_info" data-aos="slide-right" data-aos-duration="3000">
                     <div className="edu_one">
                         <h3>HIGH SCHOOL (10th)</h3>
-                        <p>Percentage: 79.33% (GSEB)</p>
+                        {/* <p>Percentage: 79.33% (GSEB)</p> */}
                     </div>
                     <div className="edu_two">
                         <h6>
