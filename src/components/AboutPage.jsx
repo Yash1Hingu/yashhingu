@@ -5,10 +5,9 @@ export default function AboutPage() {
         <div className="about_container" id="about">
             <div className="about_me" data-aos="fade-in" data-aos-duration="10000">
                 <h1>About Me</h1>
-                <p>I am skilled MERN stack developer with expertise in React, Node.js, Express.js, MongoDB, and more. I
-                    am proactive learner, a hackathon enthusiast, and a creative blogger, adept at crafting engaging user
-                    experiences.
+                <p>I feel happy and excited when I'm working with technology.
                 </p>
+                <p>Solving tech problems always brings me joy.</p>
             </div>
             <div className="education_container" data-aos="fade-in" data-aos-duration="10000">
                 <h1>Education</h1>
